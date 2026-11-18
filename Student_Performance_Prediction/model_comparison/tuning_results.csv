@@ -1,0 +1,4 @@
+Algorithm,Best Parameters,CV F1 Score,Accuracy,Precision,Recall,F1 Score
+KNN,"{'classifier__metric': 'euclidean', 'classifier__n_neighbors': 9, 'classifier__weights': 'distance'}",0.8817822466276652,0.8479576399394856,0.8374689826302729,0.9060402684563759,0.8704061895551257
+Decision Tree,"{'classifier__criterion': 'gini', 'classifier__max_depth': 7, 'classifier__min_samples_split': 5}",0.8608413663238303,0.840393343419062,0.8608108108108108,0.8550335570469799,0.857912457912458
+Random Forest,"{'classifier__max_depth': None, 'classifier__max_features': 'log2', 'classifier__min_samples_split': 2, 'classifier__n_estimators': 200}",0.9230983570471519,0.9107413010590015,0.9045161290322581,0.9409395973154362,0.9223684210526316

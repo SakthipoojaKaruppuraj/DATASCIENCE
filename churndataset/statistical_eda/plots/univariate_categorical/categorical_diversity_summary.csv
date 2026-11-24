@@ -1,0 +1,24 @@
+Column,Unique Categories,Rare Category Count,Rare Category Threshold (%)
+Gender,2,0,1.0
+Under 30,2,0,1.0
+Senior Citizen,2,0,1.0
+Married,2,0,1.0
+Dependents,2,0,1.0
+Referred a Friend,2,0,1.0
+Offer,6,0,1.0
+Phone Service,2,0,1.0
+Multiple Lines,2,0,1.0
+Internet Service,2,0,1.0
+Internet Type,4,0,1.0
+Online Security,2,0,1.0
+Online Backup,2,0,1.0
+Device Protection Plan,2,0,1.0
+Premium Tech Support,2,0,1.0
+Streaming TV,2,0,1.0
+Streaming Movies,2,0,1.0
+Streaming Music,2,0,1.0
+Unlimited Data,2,0,1.0
+Contract,3,0,1.0
+Paperless Billing,2,0,1.0
+Payment Method,3,0,1.0
+Churn Label,2,0,1.0

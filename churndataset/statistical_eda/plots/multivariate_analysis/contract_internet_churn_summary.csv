@@ -1,0 +1,13 @@
+Contract,Internet Type,total_customers,churned_customers,churn_rate
+Month-to-Month,Fiber Optic,1882,1107,58.82040382571733
+Month-to-Month,Cable,423,187,44.2080378250591
+Month-to-Month,DSL,787,262,33.29097839898348
+Month-to-Month,No Internet,518,99,19.111969111969113
+One Year,Fiber Optic,587,98,16.695059625212945
+One Year,Cable,191,23,12.041884816753926
+One Year,DSL,406,36,8.866995073891626
+Two Year,Fiber Optic,566,31,5.477031802120141
+One Year,No Internet,366,9,2.459016393442623
+Two Year,DSL,459,9,1.9607843137254901
+Two Year,Cable,216,3,1.3888888888888888
+Two Year,No Internet,642,5,0.778816199376947

@@ -1,0 +1,197 @@
+Feature 1,Feature 2,Correlation,Absolute Correlation
+Total Charges,Total Revenue,0.9722121080286033,0.9722121080286033
+Tenure in Months,Total Revenue,0.8531462752059271,0.8531462752059271
+Tenure in Months,Total Charges,0.8260735088595912,0.8260735088595912
+Total Long Distance Charges,Total Revenue,0.7785587336876364,0.7785587336876364
+Tenure in Months,Total Long Distance Charges,0.674149015644447,0.674149015644447
+Monthly Charge,Total Charges,0.6512355104762805,0.6512355104762805
+Total Charges,Total Long Distance Charges,0.6101851906103247,0.6101851906103247
+Avg Monthly Long Distance Charges,Total Long Distance Charges,0.5998282911988301,0.5998282911988301
+Monthly Charge,Total Revenue,0.5888866314216347,0.5888866314216347
+Tenure in Months,CLTV,0.396291756490598,0.396291756490598
+Avg Monthly GB Download,Monthly Charge,0.3917874888754748,0.3917874888754748
+Age,Avg Monthly GB Download,-0.3765952787908178,0.3765952787908178
+Total Revenue,CLTV,0.3541980942399867,0.3541980942399867
+Total Charges,CLTV,0.3419470648705418,0.3419470648705418
+Number of Referrals,Tenure in Months,0.32697459335811624,0.32697459335811624
+Total Long Distance Charges,CLTV,0.28218851744077383,0.28218851744077383
+Number of Dependents,Number of Referrals,0.27800311447077297,0.27800311447077297
+Number of Referrals,Total Revenue,0.2618532380901494,0.2618532380901494
+Number of Referrals,Total Charges,0.2503775050954872,0.2503775050954872
+Tenure in Months,Monthly Charge,0.24758204136146117,0.24758204136146117
+Monthly Charge,Total Long Distance Charges,0.24630032037898947,0.24630032037898947
+Avg Monthly Long Distance Charges,Total Revenue,0.23229102833481058,0.23229102833481058
+Monthly Charge,Satisfaction Score,-0.2239215633846193,0.2239215633846193
+Avg Monthly GB Download,Total Charges,0.22326785997304252,0.22326785997304252
+Number of Referrals,Total Long Distance Charges,0.2161898476773688,0.2161898476773688
+Tenure in Months,Satisfaction Score,0.21055728800705778,0.21055728800705778
+Number of Referrals,Satisfaction Score,0.18892588658160187,0.18892588658160187
+Avg Monthly GB Download,Total Revenue,0.1807259950042337,0.1807259950042337
+Number of Dependents,Satisfaction Score,0.1528734932724093,0.1528734932724093
+Age,Monthly Charge,0.14468500723172614,0.14468500723172614
+Avg Monthly Long Distance Charges,Monthly Charge,0.1383961815718927,0.1383961815718927
+Total Long Distance Charges,Satisfaction Score,0.1367829959846605,0.1367829959846605
+Number of Dependents,Monthly Charge,-0.13183655060244837,0.13183655060244837
+Number of Dependents,Avg Monthly GB Download,0.12996573674974066,0.12996573674974066
+Monthly Charge,Total Extra Data Charges,0.1262444352169428,0.1262444352169428
+Number of Referrals,CLTV,0.12284292711677434,0.12284292711677434
+Total Extra Data Charges,Total Revenue,0.12249613907855904,0.12249613907855904
+Total Charges,Total Extra Data Charges,0.12185925192664039,0.12185925192664039
+Age,Number of Dependents,-0.11899986236246105,0.11899986236246105
+Number of Dependents,Tenure in Months,0.1082371883412678,0.1082371883412678
+Monthly Charge,CLTV,0.0986932096123962,0.0986932096123962
+Total Revenue,Satisfaction Score,0.09479619171698815,0.09479619171698815
+Avg Monthly GB Download,Satisfaction Score,-0.09165690031571129,0.09165690031571129
+Avg Monthly GB Download,Total Extra Data Charges,0.08893878647588845,0.08893878647588845
+Age,Satisfaction Score,-0.08517040017318209,0.08517040017318209
+Tenure in Months,Total Extra Data Charges,0.08226552631579379,0.08226552631579379
+Satisfaction Score,CLTV,0.07581114256310378,0.07581114256310378
+Avg Monthly Long Distance Charges,Total Charges,0.06950017462069702,0.06950017462069702
+Number of Dependents,Total Long Distance Charges,0.06896559841521849,0.06896559841521849
+Total Charges,Satisfaction Score,0.0689500841706377,0.0689500841706377
+Age,Total Charges,0.05968403333995947,0.05968403333995947
+Tenure in Months,Total Refunds,0.05902139053980833,0.05902139053980833
+Total Extra Data Charges,Total Long Distance Charges,0.05887132218256816,0.05887132218256816
+Number of Dependents,CLTV,0.04961056923923226,0.04961056923923226
+Tenure in Months,Avg Monthly GB Download,0.0491186136969516,0.0491186136969516
+Age,Total Revenue,0.04826523901858674,0.04826523901858674
+Total Extra Data Charges,CLTV,0.042539865542386965,0.042539865542386965
+Total Charges,Total Refunds,0.039558483608583606,0.039558483608583606
+Number of Referrals,Avg Monthly GB Download,0.038574888489204276,0.038574888489204276
+Number of Dependents,Total Revenue,0.03803760271323879,0.03803760271323879
+Total Refunds,Total Revenue,0.03698447363500023,0.03698447363500023
+Monthly Charge,Total Refunds,0.03348197065738931,0.03348197065738931
+Avg Monthly Long Distance Charges,Avg Monthly GB Download,-0.030454543844157668,0.030454543844157668
+Number of Referrals,Monthly Charge,0.028172962053860252,0.028172962053860252
+Total Refunds,Total Long Distance Charges,0.028112591882334503,0.028112591882334503
+Age,Number of Referrals,-0.025141148952567714,0.025141148952567714
+Age,Total Extra Data Charges,0.025036466093166634,0.025036466093166634
+Number of Referrals,Total Refunds,0.024755986361703293,0.024755986361703293
+Total Refunds,Satisfaction Score,0.024220512172399327,0.024220512172399327
+Age,Total Refunds,0.02416836285632906,0.02416836285632906
+Avg Monthly Long Distance Charges,CLTV,0.023857764952998902,0.023857764952998902
+Avg Monthly GB Download,CLTV,0.023043438672320782,0.023043438672320782
+Number of Dependents,Total Charges,0.02253458355172695,0.02253458355172695
+Avg Monthly Long Distance Charges,Total Refunds,-0.01864386332012238,0.01864386332012238
+Total Refunds,Total Extra Data Charges,0.016755347443945683,0.016755347443945683
+Tenure in Months,Avg Monthly Long Distance Charges,0.01459601922695817,0.01459601922695817
+Number of Dependents,Total Extra Data Charges,-0.014436102192268475,0.014436102192268475
+Number of Dependents,Total Refunds,0.014023410949907172,0.014023410949907172
+Age,Avg Monthly Long Distance Charges,-0.011748735116448797,0.011748735116448797
+Avg Monthly GB Download,Total Long Distance Charges,0.011372784344080686,0.011372784344080686
+Total Extra Data Charges,Satisfaction Score,-0.010472268929040912,0.010472268929040912
+Age,Tenure in Months,0.009927001802728428,0.009927001802728428
+Total Refunds,CLTV,0.007991674303777951,0.007991674303777951
+Number of Dependents,Avg Monthly Long Distance Charges,-0.007323974127528508,0.007323974127528508
+Number of Referrals,Avg Monthly Long Distance Charges,0.006336342034775505,0.006336342034775505
+Age,Total Long Distance Charges,0.0030650527742331823,0.0030650527742331823
+Avg Monthly Long Distance Charges,Total Extra Data Charges,0.002413957351812524,0.002413957351812524
+Avg Monthly GB Download,Total Refunds,0.002396624383683855,0.002396624383683855
+Age,CLTV,-0.0018255048565886346,0.0018255048565886346
+Avg Monthly Long Distance Charges,Satisfaction Score,0.0011462793912821179,0.0011462793912821179
+Number of Referrals,Total Extra Data Charges,0.0003501483304763619,0.0003501483304763619
+Age,Age,,
+Number of Dependents,Age,,
+Number of Dependents,Number of Dependents,,
+Number of Referrals,Age,,
+Number of Referrals,Number of Dependents,,
+Number of Referrals,Number of Referrals,,
+Tenure in Months,Age,,
+Tenure in Months,Number of Dependents,,
+Tenure in Months,Number of Referrals,,
+Tenure in Months,Tenure in Months,,
+Avg Monthly Long Distance Charges,Age,,
+Avg Monthly Long Distance Charges,Number of Dependents,,
+Avg Monthly Long Distance Charges,Number of Referrals,,
+Avg Monthly Long Distance Charges,Tenure in Months,,
+Avg Monthly Long Distance Charges,Avg Monthly Long Distance Charges,,
+Avg Monthly GB Download,Age,,
+Avg Monthly GB Download,Number of Dependents,,
+Avg Monthly GB Download,Number of Referrals,,
+Avg Monthly GB Download,Tenure in Months,,
+Avg Monthly GB Download,Avg Monthly Long Distance Charges,,
+Avg Monthly GB Download,Avg Monthly GB Download,,
+Monthly Charge,Age,,
+Monthly Charge,Number of Dependents,,
+Monthly Charge,Number of Referrals,,
+Monthly Charge,Tenure in Months,,
+Monthly Charge,Avg Monthly Long Distance Charges,,
+Monthly Charge,Avg Monthly GB Download,,
+Monthly Charge,Monthly Charge,,
+Total Charges,Age,,
+Total Charges,Number of Dependents,,
+Total Charges,Number of Referrals,,
+Total Charges,Tenure in Months,,
+Total Charges,Avg Monthly Long Distance Charges,,
+Total Charges,Avg Monthly GB Download,,
+Total Charges,Monthly Charge,,
+Total Charges,Total Charges,,
+Total Refunds,Age,,
+Total Refunds,Number of Dependents,,
+Total Refunds,Number of Referrals,,
+Total Refunds,Tenure in Months,,
+Total Refunds,Avg Monthly Long Distance Charges,,
+Total Refunds,Avg Monthly GB Download,,
+Total Refunds,Monthly Charge,,
+Total Refunds,Total Charges,,
+Total Refunds,Total Refunds,,
+Total Extra Data Charges,Age,,
+Total Extra Data Charges,Number of Dependents,,
+Total Extra Data Charges,Number of Referrals,,
+Total Extra Data Charges,Tenure in Months,,
+Total Extra Data Charges,Avg Monthly Long Distance Charges,,
+Total Extra Data Charges,Avg Monthly GB Download,,
+Total Extra Data Charges,Monthly Charge,,
+Total Extra Data Charges,Total Charges,,
+Total Extra Data Charges,Total Refunds,,
+Total Extra Data Charges,Total Extra Data Charges,,
+Total Long Distance Charges,Age,,
+Total Long Distance Charges,Number of Dependents,,
+Total Long Distance Charges,Number of Referrals,,
+Total Long Distance Charges,Tenure in Months,,
+Total Long Distance Charges,Avg Monthly Long Distance Charges,,
+Total Long Distance Charges,Avg Monthly GB Download,,
+Total Long Distance Charges,Monthly Charge,,
+Total Long Distance Charges,Total Charges,,
+Total Long Distance Charges,Total Refunds,,
+Total Long Distance Charges,Total Extra Data Charges,,
+Total Long Distance Charges,Total Long Distance Charges,,
+Total Revenue,Age,,
+Total Revenue,Number of Dependents,,
+Total Revenue,Number of Referrals,,
+Total Revenue,Tenure in Months,,
+Total Revenue,Avg Monthly Long Distance Charges,,
+Total Revenue,Avg Monthly GB Download,,
+Total Revenue,Monthly Charge,,
+Total Revenue,Total Charges,,
+Total Revenue,Total Refunds,,
+Total Revenue,Total Extra Data Charges,,
+Total Revenue,Total Long Distance Charges,,
+Total Revenue,Total Revenue,,
+Satisfaction Score,Age,,
+Satisfaction Score,Number of Dependents,,
+Satisfaction Score,Number of Referrals,,
+Satisfaction Score,Tenure in Months,,
+Satisfaction Score,Avg Monthly Long Distance Charges,,
+Satisfaction Score,Avg Monthly GB Download,,
+Satisfaction Score,Monthly Charge,,
+Satisfaction Score,Total Charges,,
+Satisfaction Score,Total Refunds,,
+Satisfaction Score,Total Extra Data Charges,,
+Satisfaction Score,Total Long Distance Charges,,
+Satisfaction Score,Total Revenue,,
+Satisfaction Score,Satisfaction Score,,
+CLTV,Age,,
+CLTV,Number of Dependents,,
+CLTV,Number of Referrals,,
+CLTV,Tenure in Months,,
+CLTV,Avg Monthly Long Distance Charges,,
+CLTV,Avg Monthly GB Download,,
+CLTV,Monthly Charge,,
+CLTV,Total Charges,,
+CLTV,Total Refunds,,
+CLTV,Total Extra Data Charges,,
+CLTV,Total Long Distance Charges,,
+CLTV,Total Revenue,,
+CLTV,Satisfaction Score,,
+CLTV,CLTV,,

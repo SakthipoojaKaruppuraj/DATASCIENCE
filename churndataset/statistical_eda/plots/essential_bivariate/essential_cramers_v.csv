@@ -1,0 +1,8 @@
+Feature,Chi_Square,P_Value,Cramers_V,Association
+Contract,1445.29,0.0,0.453,Strong
+Internet Type,653.83,2.1503502231295044e-141,0.305,Moderate
+Offer,481.73,7.020357379958891e-102,0.262,Moderate
+Payment Method,337.83,4.374167780467117e-74,0.219,Moderate
+Paperless Billing,258.28,4.073354668665985e-58,0.191,Weak
+Online Security,205.63,1.2320984831180024e-46,0.171,Weak
+Premium Tech Support,190.17,2.9235674453140758e-43,0.164,Weak

@@ -18,16 +18,16 @@ print("Dataset shape:", df.shape)
 # --------------------------------------------------
 
 def create_tenure_group(tenure):
-
-    if tenure <= 12:
-        return "New"
+    if tenure <= 6:
+        return "Onboarding"       # Months 1-6 (Extreme risk: 53.3% churn)
+    elif tenure <= 12:
+        return "First-Year"       # Months 7-12 (Stabilizing: 29.2% churn)
     elif tenure <= 24:
-        return "Early"
+        return "Developing"       # Months 13-24 (21.7% churn)
     elif tenure <= 48:
-        return "Mid-Term"
+        return "Established"      # Months 25-48 (14.2% churn)
     else:
-        return "Long-Term"
-
+        return "Loyal"            # Months 49+ (6.6% churn)
 
 df["Tenure_Group"] = df["Tenure in Months"].apply(create_tenure_group)
 

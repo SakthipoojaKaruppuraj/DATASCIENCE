@@ -1,0 +1,15 @@
+Factor,Type,Category,Frequency,Percentage
+Contract,Categorical,Month-to-Month,3610,51.26
+Contract,Categorical,Two Year,1883,26.74
+Contract,Categorical,One Year,1550,22.01
+Internet Type,Categorical,Fiber Optic,3035,43.09
+Internet Type,Categorical,DSL,1652,23.46
+Internet Type,Categorical,No Internet,1526,21.67
+Internet Type,Categorical,Cable,830,11.78
+Online Security,Categorical,No,5024,71.33
+Online Security,Categorical,Yes,2019,28.67
+Premium Tech Support,Categorical,No,4999,70.98
+Premium Tech Support,Categorical,Yes,2044,29.02
+Payment Method,Categorical,Bank Withdrawal,3909,55.5
+Payment Method,Categorical,Credit Card,2749,39.03
+Payment Method,Categorical,Mailed Check,385,5.47

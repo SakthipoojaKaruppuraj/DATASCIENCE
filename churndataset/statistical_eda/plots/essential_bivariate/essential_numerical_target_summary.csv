@@ -1,0 +1,5 @@
+,Tenure in Months,Tenure in Months,Tenure in Months,Monthly Charge,Monthly Charge,Monthly Charge,Satisfaction Score,Satisfaction Score,Satisfaction Score
+,mean,median,std,mean,median,std,mean,median,std
+Churn Label,,,,,,,,,
+No,37.59,38.0,24.09,61.27,64.43,31.09,3.79,4.0,0.78
+Yes,17.98,10.0,19.53,74.44,79.65,24.67,1.74,2.0,0.81

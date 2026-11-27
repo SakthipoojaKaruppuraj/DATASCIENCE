@@ -63,7 +63,7 @@ print("=" * 55)
 
 print(f"\nTraining Samples: {len(X_train):,}")
 print(f"Testing Samples:  {len(X_test):,}")
-print(f"Features:         {X_train.shape[1]} (22 Categorical, 15 Numerical)")
+print(f"Features:         {X_train.shape[1]} ({len(categorical_columns)} Categorical, {len(numerical_columns)} Numerical)")
 
 print("\n--- Key Metrics ---")
 print(f"Accuracy:  {accuracy_score(y_test, y_pred):.4f}")

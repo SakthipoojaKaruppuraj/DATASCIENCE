@@ -16,17 +16,22 @@ Y_TEST_PATH = DATA_DIR / "y_test.csv"
 X_FINAL_PATH = DATA_DIR / "X_final.csv"
 Y_FINAL_PATH = DATA_DIR / "y_final.csv"
 
-print("=" * 60)
-print("STRATIFIED TRAIN-TEST SPLIT (CURATED TELCO DATASET)")
-print("=" * 60)
+print("=" * 65)
+print("STRATIFIED TRAIN-TEST SPLIT (LEAKAGE-FREE TRAINING MATRIX)")
+print("=" * 65)
 
-# Load the updated curated dataset
+# Load master curated dataset (keeps all 38 columns intact)
 df = pd.read_csv(INPUT_PATH)
-print(f"Loaded Curated Dataset: {df.shape[0]:,} rows, {df.shape[1]} columns")
+print(f"Loaded Master Curated Dataset: {df.shape[0]:,} rows, {df.shape[1]} columns")
 
-# Separate features and target
+# Columns to exclude strictly from training inputs to prevent post-outcome exit survey leakage
+exclude_from_training = ["Satisfaction Score", "Satisfaction_Risk_Tier"]
 target_col = "Churn Label"
-X = df.drop(columns=[target_col])
+
+print(f"\nExcluding post-outcome leakage features from training inputs: {exclude_from_training}")
+
+# Separate training features and target
+X = df.drop(columns=[target_col] + exclude_from_training)
 y = df[target_col]
 
 # Convert target labels into binary numeric values (No: 0, Yes: 1)
@@ -47,15 +52,21 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Display dataset shapes
 print("\nDataset Split Summary:")
-print("-" * 40)
-print(f"X_train Shape: {X_train.shape} (80%)")
-print(f"X_test Shape:  {X_test.shape} (20%)")
+print("-" * 45)
+print(f"X_train Shape: {X_train.shape} (80% Train, 35 features)")
+print(f"X_test Shape:  {X_test.shape} (20% Test, 35 features)")
+print(f"X_final Shape: {X.shape} (Full Population, 35 features)")
 print(f"y_train Shape: {y_train.shape}")
 print(f"y_test Shape:  {y_test.shape}")
 
+# Verify satisfaction features are completely absent from X
+assert "Satisfaction Score" not in X.columns, "Satisfaction Score found in X!"
+assert "Satisfaction_Risk_Tier" not in X.columns, "Satisfaction_Risk_Tier found in X!"
+print("\n Zero leakage verified: Satisfaction Score and Risk Tier excluded from X.")
+
 # Display target distribution & stratification verification
 print("\nTarget Class Balance Verification:")
-print("-" * 40)
+print("-" * 45)
 train_dist = y_train.value_counts(normalize=True) * 100
 test_dist = y_test.value_counts(normalize=True) * 100
 

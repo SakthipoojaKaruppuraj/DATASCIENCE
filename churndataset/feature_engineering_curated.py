@@ -44,43 +44,43 @@ print("   Distribution of Tenure_Group:")
 print(df["Tenure_Group"].value_counts(normalize=True).round(3) * 100)
 
 # --------------------------------------------------
-# 3. FEATURE ENGINEERING: ECOSYSTEM SERVICES COUNT
+# 3. FEATURE ENGINEERING: ORTHOGONAL SERVICE COUNTS (ZERO REDUNDANCY)
 # --------------------------------------------------
 
-print("\n2. Engineering Total_Additional_Services & Support_Service_Count...")
+print("\n2. Engineering Disjoint Service Counts (Eliminating Overlap & Redundancy)...")
 
-all_additional_services = [
+# 1. Technical & Device Protection Services (4 items: Security, Backup, Protection, Tech Support)
+core_support_services = [
     "Online Security",
     "Online Backup",
     "Device Protection Plan",
-    "Premium Tech Support",
+    "Premium Tech Support"
+]
+
+# 2. Entertainment Media Services (3 items: TV, Movies, Music)
+streaming_services = [
     "Streaming TV",
     "Streaming Movies",
     "Streaming Music"
 ]
 
-core_support_services = [
-    "Premium Tech Support",
-    "Online Security",
-    "Online Backup"
-]
-
-# Total bundle depth (integer 0 to 7)
-df["Total_Additional_Services"] = (
-    df[[col for col in all_additional_services if col in df.columns]]
-    .apply(lambda col: col.astype(str).str.strip().str.lower() == "yes")
-    .sum(axis=1)
-)
-
-# Core support tools (integer 0 to 3)
+# Count technical support tools (0 to 4) - Measures ecosystem switching barrier
 df["Support_Service_Count"] = (
     df[[col for col in core_support_services if col in df.columns]]
     .apply(lambda col: col.astype(str).str.strip().str.lower() == "yes")
     .sum(axis=1)
 )
 
-print(f"   Average Additional Services per Customer: {df['Total_Additional_Services'].mean():.2f}")
-print(f"   Average Core Support Services per Customer: {df['Support_Service_Count'].mean():.2f}")
+# Count entertainment streaming services (0 to 3) - Measures media consumption
+# Mutually exclusive from Support_Service_Count to eliminate double-counting!
+df["Streaming_Service_Count"] = (
+    df[[col for col in streaming_services if col in df.columns]]
+    .apply(lambda col: col.astype(str).str.strip().str.lower() == "yes")
+    .sum(axis=1)
+)
+
+print(f"   Average Support/Protection Services per Customer: {df['Support_Service_Count'].mean():.2f} (out of 4)")
+print(f"   Average Entertainment Streaming Services per Customer: {df['Streaming_Service_Count'].mean():.2f} (out of 3)")
 
 # --------------------------------------------------
 # 4. FEATURE ENGINEERING: FINANCIAL RATIOS & PRICING PACE

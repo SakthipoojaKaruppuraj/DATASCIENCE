@@ -1,3 +1,4 @@
+from pathlib import Path
 import pandas as pd
 
 from sklearn.compose import ColumnTransformer
@@ -14,12 +15,16 @@ from sklearn.metrics import (
     classification_report
 )
 
-# Load train and test datasets
-X_train = pd.read_csv("../data/X_train.csv")
-X_test = pd.read_csv("../data/X_test.csv")
+# Path resolution to allow execution from any directory
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR.parent / "data" if (BASE_DIR.parent / "data").exists() else BASE_DIR / "data"
 
-y_train = pd.read_csv("../data/y_train.csv").iloc[:, 0]
-y_test = pd.read_csv("../data/y_test.csv").iloc[:, 0]
+# Load train and test datasets
+X_train = pd.read_csv(DATA_DIR / "X_train.csv")
+X_test = pd.read_csv(DATA_DIR / "X_test.csv")
+
+y_train = pd.read_csv(DATA_DIR / "y_train.csv").iloc[:, 0]
+y_test = pd.read_csv(DATA_DIR / "y_test.csv").iloc[:, 0]
 
 # Identify categorical columns
 categorical_columns = X_train.select_dtypes(
@@ -45,8 +50,6 @@ model.fit(X_train, y_train)
 
 # Predictions
 y_pred = model.predict(X_test)
-
-# Prediction probabilities
 y_prob = model.predict_proba(X_test)[:, 1]
 
 # Evaluation

@@ -1,4 +1,4 @@
-
+from pathlib import Path
 import pandas as pd
 
 from sklearn.compose import ColumnTransformer
@@ -16,16 +16,19 @@ from sklearn.metrics import (
     classification_report
 )
 
+# Path resolution to allow execution from any directory
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR.parent / "data" if (BASE_DIR.parent / "data").exists() else BASE_DIR / "data"
+
 # ==========================================
 # 1. LOAD TRAIN AND TEST DATA
 # ==========================================
 
-X_train = pd.read_csv("../data/X_train.csv")
-X_test = pd.read_csv("../data/X_test.csv")
+X_train = pd.read_csv(DATA_DIR / "X_train.csv")
+X_test = pd.read_csv(DATA_DIR / "X_test.csv")
 
-y_train = pd.read_csv("../data/y_train.csv").iloc[:, 0]
-y_test = pd.read_csv("../data/y_test.csv").iloc[:, 0]
-
+y_train = pd.read_csv(DATA_DIR / "y_train.csv").iloc[:, 0]
+y_test = pd.read_csv(DATA_DIR / "y_test.csv").iloc[:, 0]
 
 # ==========================================
 # 2. IDENTIFY CATEGORICAL FEATURES
@@ -34,7 +37,6 @@ y_test = pd.read_csv("../data/y_test.csv").iloc[:, 0]
 categorical_columns = X_train.select_dtypes(
     include=["str", "object", "category"]
 ).columns.tolist()
-
 
 # ==========================================
 # 3. PREPROCESSING
@@ -46,7 +48,6 @@ preprocessor = ColumnTransformer(
     ],
     remainder="passthrough"
 )
-
 
 # ==========================================
 # 4. CREATE GRADIENT BOOSTING MODEL
@@ -62,22 +63,18 @@ model = Pipeline([
     ))
 ])
 
-
 # ==========================================
 # 5. TRAIN MODEL
 # ==========================================
 
 model.fit(X_train, y_train)
 
-
 # ==========================================
 # 6. MAKE PREDICTIONS
 # ==========================================
 
 y_pred = model.predict(X_test)
-
 y_prob = model.predict_proba(X_test)[:, 1]
-
 
 # ==========================================
 # 7. EVALUATE MODEL
